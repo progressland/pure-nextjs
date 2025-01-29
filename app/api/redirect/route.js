@@ -1,4 +1,5 @@
 export async function GET(req) {
-    const { searchParams } = new URL(req.url);
-    return Response.redirect(new URL(searchParams.get("url")).toString(), 302);
+    const { pathname, searchParams } = new URL(req.url);
+        const target = searchParams.get("url") || `https://${pathname.replace(/^\/api\/redirect\//, "")}`;
+        return Response.redirect(target, 302);
 }
