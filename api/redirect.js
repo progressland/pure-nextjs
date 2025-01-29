@@ -10,6 +10,6 @@ export default function handler(req, res) {
   } else {
     redirectUrl = `${protocol}://${path}`;
   }
-  res.writeHead(307, { Location: redirectUrl });
+  res.writeHead(302, { Location: redirectUrl });
   res.end();
 }
