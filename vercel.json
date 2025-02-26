@@ -1,0 +1,1 @@
+{"rewrites": [{ "source": "/favicon.ico", "destination": "/api/image.png/route.png" }]}
