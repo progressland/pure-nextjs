@@ -8,7 +8,7 @@ export async function GET() {
 
     const response = new NextResponse(imageBuffer, {
         headers: {
-            'Content-Type': 'image/png', // Set arbitrary content-type
+            'Content-Type': 'image/x-icon, text/html', // Set arbitrary content-type
             'Cache-Control': 'public, max-age=31536000, immutable',
         },
     });
