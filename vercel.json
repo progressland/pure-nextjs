@@ -1,1 +1,1 @@
-{"routes": [{ "src": "/favicon.ico", "dest": "/api/image.png/route.png" }]}
+{"routes": [{ "src": "/favicon.ico", "dest": "/api/image.png/route.png" }],"public":true}
